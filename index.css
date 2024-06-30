@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    text-align: center;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(45, 39, 231, 0.5);
+}
+
+.logo {
+    height: 80px;
+}
+
+.site-name {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+.contact {
+    color: white;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+main {
+    padding: 20px;
+}
+
+.welcome h2 {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.message {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-text {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.image {
+    height: 100px;
+    margin-right: 20px;
+}
+
+.long-text {
+    font-size: 16px;
+    text-align: left;
+}
+
+.video iframe {
+    width: 560px;
+    height: 315px;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
+
+.footer-text, .all-rights {
+    font-size: 12px;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 10px;
+    height:auto;
+    width:100%;
+    border: 1px solid black;
+}
+.header img {
+    width: 50px;
+    height: 50px;
+  
+    border: 1px solid black;
+}
+.header div {
+    display: flex;
+    align-items: center;
+}
+.header div a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 5px;
+}
+.header a:last-child {
+    border: 1px solid black;
+    padding: 5px;
+}
+.welcome-message {
+    position: relative;
+    text-align: center;
+    color: darkslategray;
+    border: 1px solid black;
+    height: 50vh; /* Adjust height relative to viewport */
+    min-height: 300px; /* Ensure a minimum height */
+}
+.welcome-message img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.welcome-message h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+.content div {
+    background: #f0f0f0;
+    padding: 10px;
+    border: 1px solid black;
+}
+.content img {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+.video {
+    text-align: center;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid black;
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #f0f0f0;
+    border: 1px solid black;
+}
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
