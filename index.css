@@ -2,18 +2,37 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
 
 .page {
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
 }
 
-header {
+nav {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: rgba(45, 39, 231, 0.5);
+    padding-right: 20px;
+    background-color: rgb(42, 96, 83);
+    width: 98%;
+    height: 100px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -24,169 +43,77 @@ header {
     flex-grow: 1;
     text-align: center;
     font-size: 40px;
-    color: white;
+    color: rgb(187, 157, 74);
 }
 
-.contact {
-    color: white;
-}
-
-.background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('background.jpg');
-    background-size: cover;
-    opacity: 0.5;
-    z-index: -1;
-}
-
-main {
+.welcome-message {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 210);
     padding: 20px;
+    margin: 130px 0 20px 0;
 }
 
-.welcome h2 {
-    font-size: 32px;
-    margin: 20px 0;
-}
-
-.message {
-    font-size: 20px;
-    margin: 10px 0;
+.welcome-message h1 {
+    margin: 0;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 20px;
 }
 
-.image-text {
+.section {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
 }
 
-.image {
-    height: 100px;
+.section img {
+    width: 50%;
+    height: auto;
+    border: 1px solid white;
     margin-right: 20px;
 }
 
-.long-text {
-    font-size: 16px;
+.section .text {
+    width: 50%;
+    color: rgb(255, 255, 255);
     text-align: left;
 }
 
-.video iframe {
-    width: 560px;
-    height: 315px;
-    margin: 20px 0;
-}
-
-footer {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-}
-
-.footer-text, .all-rights {
-    font-size: 12px;
-}
-
-
-
-
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #f0f0f0;
-    padding: 10px;
-    height:auto;
-    width:100%;
-    border: 1px solid black;
-}
-.header img {
-    width: 50px;
-    height: 50px;
-  
-    border: 1px solid black;
-}
-.header div {
-    display: flex;
-    align-items: center;
-}
-.header div a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    border: 1px solid black;
-    padding: 5px;
-}
-.header a:last-child {
-    border: 1px solid black;
-    padding: 5px;
-}
-.welcome-message {
-    position: relative;
-    text-align: center;
-    color: darkslategray;
-    border: 1px solid black;
-    height: 50vh; /* Adjust height relative to viewport */
-    min-height: 300px; /* Ensure a minimum height */
-}
-.welcome-message img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.5;
-}
-.welcome-message h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-}
-.content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 10px;
-}
-.content div {
-    background: #f0f0f0;
-    padding: 10px;
-    border: 1px solid black;
-}
-.content img {
-    width: 100%;
-    height: auto;
-    border: 1px solid black;
-}
 .video {
     text-align: center;
-    padding: 10px;
-    max-width: 100%;
-    max-height: 100%;
-    border: 1px solid black;
+    padding: 20px;
+    width: 100%;
+    max-width: 790px;
 }
+
+.video iframe {
+    width: 100%;
+    height: 315px;
+}
+
 .footer {
     text-align: center;
     padding: 10px;
-    background: #f0f0f0;
-    border: 1px solid black;
+    width: 100%;
 }
+
 @media (max-width: 768px) {
-    .content {
-        grid-template-columns: 1fr;
+    .section {
+        flex-direction: column;
+    }
+
+    .section img, .section .text {
+        width: 100%;
     }
 }
