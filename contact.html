@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+    <div class="page">
+        <nav>
+            <img src="360_F_375387396_wSJM4Zm0kIRoG7Ej8rmkXot9gN69H4u4.png" alt="Site Logo" class="logo">
+            <div class="nav-center">
+                <h1 class="site-name"><a href="index.html" style="color: rgb(208, 152, 78); text-decoration: none;">MovieMagic</a></h1>
+            </div>
+            <div class="nav-right">
+                <a style="color: whitesmoke;">EMail:info@moviemagic.com<br>Mob: 9998887776</a>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div>
+            <p>
+                <b>
+                Welcome to MovieMagic.<br>
+                You can contact us via filling the form or use email/mobile. <br>
+                Happy watching!
+                </b>
+            </p>
+        </div>
+        <h2 style="text-align: center;">FORM</h2>
+        <form action="javascript:submitForm()" onSubmit = "return validate()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="genre">Favourite Genre:</label>
+            <input list="genres" name="genre" id="genre" required>
+            <datalist id="genres">
+                <option value="Science Fiction">
+                <option value="Fantasy">
+                <option value="Mystery">
+                <option value="Horror">
+                <option value="Romance">
+            </datalist>
+            <label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                Subscribe to our newsletter via email
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+            function submitForm() {
+                window.alert("Form Submitted")
+            }
+        </script>
+        <footer>
+            <small>ALL RIGHTS RESERVED @MovieMagic 2024</small>
+        </footer>
+    </div>
+</body>
+</html>
